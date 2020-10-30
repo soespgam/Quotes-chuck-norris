@@ -1,0 +1,7 @@
+{
+  "name": "Desafio-SolEspitia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
