@@ -1,0 +1,24 @@
+<ion-toolbar>
+  <ion-col class="button" >
+    <ion-button color="light" (click)="logout()"> <ion-icon name="walk-outline"></ion-icon>Exit</ion-button>
+  </ion-col>
+  <ion-title class="tittle">Quotes</ion-title>
+</ion-toolbar>
+<ion-content>
+<ion-row>
+  <ion-col size-xs="11" offset-xs="3" offset-xl="5" size-xl="4">
+    <img src="../../../assets/quote/chuk.jpg" class="imagenLog" />
+  </ion-col>
+</ion-row>
+  <ion-row>
+    <ion-col >
+      <app-quoteComponent [datoQuote]="inputQuote"></app-quoteComponent>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col  size-xs="11" offset-xs="3" offset-xl="5" size-xl="4">
+      <ion-button color="dark" (click)="regresar()">Regresar a Favoritos</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

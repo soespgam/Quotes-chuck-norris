@@ -1,0 +1,27 @@
+.containerCat{
+    height: 60px;
+}
+.containerButton {
+    padding-top: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerIcon{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.tittle{
+    text-align: center; font-weight: bolder;
+}
+
+@media (min-width: 300px) and (max-width: 601px)  {
+  
+    .containerCat{
+        padding-left: 30px;
+        height: 60px;
+    }
+    
+}

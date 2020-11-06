@@ -1,0 +1,26 @@
+<ion-toolbar>
+  <ion-title class="tittle">Categories</ion-title>
+</ion-toolbar>
+<ion-content>
+  <ion-row *ngFor="let item of category; let i = index">
+    <ion-col class="containerCat" size-xs="9" offset-xs="1" offset-xl="3" size-xl="5">
+      <app-category
+        [category]="item"
+        (changeStatus)="cambioBoolean(i,$event)"
+      ></app-category>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="containerButton" size-xs="9" offset-xs="1" offset-xl="3" size-xl="5">
+      <app-button
+        [datoButton]="datoButton"
+        (valorButton)="irFavoritos()"
+      ></app-button>
+      <app-button
+        [datoButton]="datoButton2"
+        (valorButton)="omitir()"
+      ></app-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+

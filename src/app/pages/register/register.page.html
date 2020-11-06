@@ -1,0 +1,28 @@
+<ion-content>
+ <ion-grid>
+  <ion-toolbar>
+    <ion-title style="text-align: center; font-weight: bolder;;">Register</ion-title>
+  </ion-toolbar>
+<ion-row class="container">
+  <ion-row >
+    <ion-col>
+      <img src="../../../assets/register/chuk2.png" class="containerImg">
+    </ion-col>
+</ion-row>
+<ion-row> 
+    <ion-col class="containerForm">
+      <app-input [datoUser]="inputName" (sendDate)="validateName($event)"></app-input>
+      <app-input [datoUser]="inputLastName" (sendDate)="validateLastName($event)"></app-input>
+      <app-input [datoUser]="inputEmail" (sendDate)="validateEmail($event)"></app-input>
+      <app-input [datoUser]="inputPassword" (sendDate)="validatePassword($event)"></app-input>
+      
+      <ion-row class="containerButton">
+      <app-button [datoButton]="datoButton" (valorButton)="submitForm()" [ngClass]="{'disable':vaidatorForm.invalid ==  true}" ></app-button>
+      <app-button [datoButton]="datoButton2" (valorButton)="continuar()" ></app-button>
+      </ion-row>
+    </ion-col>
+ </ion-row>
+ <ion-button (click)="conG()">PRUEBA</ion-button>
+</ion-row>
+ </ion-grid>
+</ion-content>
